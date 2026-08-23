@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m py_compile \"/c/Users/0328m/python_projects/Chapter 3/Problem1.py\")"
+    ]
+  }
+}
