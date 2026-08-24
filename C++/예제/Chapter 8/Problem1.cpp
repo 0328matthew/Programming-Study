@@ -11,9 +11,9 @@ int main() {
     for(int i = 0; i < 100; i++) {
         array[i] = 100 + rand() % 101;
     }
+    print(array, 0);
 }
 
 void print(const int array[], int idx) {
-    int num = 0;
     cout << "이 배열의 " << idx << "번째 요소는 " << array[idx] << " 입니다." << endl;
 }
