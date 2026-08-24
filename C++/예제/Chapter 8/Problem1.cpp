@@ -15,5 +15,5 @@ int main() {
 
 void print() {
     int num = 0;
-    cout << "이 배열의 " << num << "번"
+    cout << "이 배열의 " << num << "번째 요소는 " << array[num] << "입니다."
 }
