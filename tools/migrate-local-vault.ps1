@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     데스크톱의 기존 폴더들을 새 Programming Study 볼트 구조로 옮깁니다.
 
@@ -37,6 +37,24 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
+
+# ── 인코딩 자체 점검 ──────────────────────────────────────
+# Windows PowerShell 5.1 은 BOM 없는 .ps1 을 UTF-8 이 아니라 시스템
+# 코드페이지(한국어 Windows 는 cp949)로 읽습니다. 그러면 아래의
+# '개념'·'예제' 리터럴이 깨져서 엉뚱한 폴더명이 만들어집니다.
+# 이 파일은 UTF-8 BOM 으로 저장돼 있어야 합니다.
+if ('예제'.Length -ne 2 -or '개념'.Length -ne 2) {
+    throw @"
+이 스크립트의 한글이 깨진 채로 읽혔습니다 (인코딩 문제).
+이 파일은 UTF-8 BOM 으로 저장돼 있어야 합니다.
+
+  git pull        로 최신 버전을 받아 다시 실행해 보세요.
+
+그래도 안 되면 PowerShell 7 로 실행하세요:
+  winget install Microsoft.PowerShell
+  pwsh -File .\tools\migrate-local-vault.ps1 ...
+"@
+}
 
 if (-not (Test-Path (Join-Path $Vault '.git'))) {
     throw "볼트가 git 리포지터리가 아닙니다: $Vault"
