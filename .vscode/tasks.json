@@ -2,14 +2,68 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "C/C++: 빌드하고 실행 (확인)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/tools/cpp-run.ps1",
+        "-Source",
+        "${file}",
+        "-Mode",
+        "${input:cppRunMode}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": "$gcc",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true,
+        "focus": true
+      }
+    },
+    {
+      "label": "C/C++: 빌드만 (확인)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/tools/cpp-run.ps1",
+        "-Source",
+        "${file}",
+        "-Mode",
+        "${input:cppBuildMode}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": "$gcc",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    },
+    {
       "label": "자동 동기화 시작 (auto-sync)",
       "type": "shell",
       "command": "powershell",
       "args": [
         "-NoProfile",
-        "-ExecutionPolicy", "Bypass",
-        "-File", "${workspaceFolder}/tools/auto-sync.ps1",
-        "-VaultPath", "${workspaceFolder}"
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/tools/auto-sync.ps1",
+        "-VaultPath",
+        "${workspaceFolder}"
       ],
       "isBackground": true,
       "runOptions": {
@@ -28,9 +82,12 @@
       "command": "powershell",
       "args": [
         "-NoProfile",
-        "-ExecutionPolicy", "Bypass",
-        "-File", "${workspaceFolder}/tools/auto-sync.ps1",
-        "-VaultPath", "${workspaceFolder}",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/tools/auto-sync.ps1",
+        "-VaultPath",
+        "${workspaceFolder}",
         "-Once"
       ],
       "presentation": {
@@ -98,6 +155,52 @@
       },
       "problemMatcher": "$gcc",
       "group": "build"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "cppRunMode",
+      "type": "pickString",
+      "description": "MSYS2 g++/gcc 로 빌드할까요?",
+      "options": [
+        {
+          "label": "빌드하고 실행",
+          "value": "build-run"
+        },
+        {
+          "label": "빌드만 하기",
+          "value": "build-only"
+        },
+        {
+          "label": "빌드 없이 기존 exe 실행",
+          "value": "run-only"
+        },
+        {
+          "label": "취소",
+          "value": "cancel"
+        }
+      ],
+      "default": "build-run"
+    },
+    {
+      "id": "cppBuildMode",
+      "type": "pickString",
+      "description": "디버그 전에 빌드할까요?",
+      "options": [
+        {
+          "label": "빌드하기",
+          "value": "build-only"
+        },
+        {
+          "label": "빌드 건너뛰기",
+          "value": "run-only"
+        },
+        {
+          "label": "취소",
+          "value": "cancel"
+        }
+      ],
+      "default": "build-only"
     }
   ]
 }

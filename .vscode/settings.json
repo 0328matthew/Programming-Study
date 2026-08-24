@@ -47,6 +47,14 @@
     "**/__pycache__": true
   },
 
+  // ── Code Runner(▷ 버튼)도 MSYS2 로 고정 + 실행 전 확인 ──
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.executorMap": {
+    "cpp": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$workspaceRoot/tools/cpp-run.ps1\" -Source \"$fullFileName\" -Mode ask",
+    "c": "powershell -NoProfile -ExecutionPolicy Bypass -File \"$workspaceRoot/tools/cpp-run.ps1\" -Source \"$fullFileName\" -Mode ask"
+  },
+
   // 태스크가 folderOpen 으로 자동 실행되도록 허용
   "task.allowAutomaticTasks": "on"
 }
