@@ -13,4 +13,7 @@ int main() {
     }
 }
 
-void print
+void print() {
+    int num = 0;
+    cout << "이 배열의 " << num << "번"
+}
