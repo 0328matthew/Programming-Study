@@ -34,8 +34,14 @@
     "editor.insertSpaces": true
   },
 
-  // 탐색기에서 빌드 결과물 숨기기
+  // 탐색기에는 C++ / Python 만 노출 (그 외 최상위 항목 + 빌드 결과물 숨김)
   "files.exclude": {
+    "docs": true,
+    "tools": true,
+    "README.md": true,
+    ".obsidian": true,
+    ".gitignore": true,
+    ".vscode": true,
     "**/*.exe": true,
     "**/*.o": true,
     "**/__pycache__": true
