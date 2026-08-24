@@ -5,5 +5,5 @@ using namespace std;
 
 int main() {
     int array[100] = {0};
-    srand();
+    srand((unsigned int)time(NULL));
 }
