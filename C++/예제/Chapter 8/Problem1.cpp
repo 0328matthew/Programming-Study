@@ -7,6 +7,6 @@ int main() {
     int array[100] = {0};
     srand(static_cast<unsigned>(time(nullptr)))
     for(int i = 0; i < 100; i++) {
-        array[i] = rand();
+        array[i] = 100 + rand();
     }
 }
