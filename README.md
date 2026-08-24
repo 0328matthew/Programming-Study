@@ -13,11 +13,12 @@ Programming Study/
 ├── C++/
 │   ├── 개념/          ← 이론 노트 (구 CPP-Study)
 │   └── 예제/          ← 연습문제 코드 (구 cpp_project)
-│       ├── Chapter 3/ … Chapter 7/
+│       ├── Chapter 3/ … Chapter 8/
 │       └── …
 ├── Python/
 │   ├── 개념/          ← 이론 노트 (구 Python-Study)
 │   └── 예제/          ← 연습문제 코드 (구 python_projects — 로컬에서 복사)
+│       └── Chapter 2/ · Chapter 3/
 ├── .vscode/           ← MSYS2 UCRT64 빌드·디버그 설정, 자동 동기화 태스크
 ├── tools/             ← 자동 커밋·푸시 스크립트
 └── docs/              ← 설정 가이드
