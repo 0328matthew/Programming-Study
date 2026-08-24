@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-void print();
+void print(const int array[], int idx);
 
 int main() {
     int array[100] = {0};
@@ -13,7 +13,7 @@ int main() {
     }
 }
 
-void print(const int ) {
+void print(const int array[], int idx) {
     int num = 0;
-    cout << "이 배열의 " << num << "번째 요소는 " << array[num] << " 입니다.";
+    cout << "이 배열의 " << idx << "번째 요소는 " << array[idx] << " 입니다." << endl;
 }
