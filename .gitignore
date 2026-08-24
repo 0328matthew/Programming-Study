@@ -1,0 +1,34 @@
+# ── 빌드 결과물 ────────────────────────────────────────────
+*.exe
+*.out
+*.o
+*.obj
+*.pdb
+*.ilk
+a.exe
+program.exe
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# ── Obsidian ──────────────────────────────────────────────
+# 플러그인·테마·핫키는 공유하되, 기기마다 달라지는 것만 제외
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ── OS / 편집기 ───────────────────────────────────────────
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+
+# ── 자동 동기화 스크립트 작업 파일 ─────────────────────────
+# 평소에는 .git/autosync.lock 을 쓰므로 추적될 일이 없습니다.
+# 아래는 git 을 호출하지 못해 루트로 폴백한 경우를 위한 대비책입니다.
+.git-autosync.lock

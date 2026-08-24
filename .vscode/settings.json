@@ -1,0 +1,46 @@
+{
+  // ── Git 자동화 ────────────────────────────────────────────
+  // 수동으로 커밋하면 곧바로 pull+push 까지 이어서 실행
+  "git.postCommitCommand": "sync",
+  // 변경사항을 스테이징하지 않고 커밋해도 전체를 커밋
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.autofetchPeriod": 180,
+  // 푸시 전 자동 rebase pull (Obsidian Git 과 충돌 줄이기)
+  "git.rebaseWhenSync": true,
+
+  // ── 자동 저장 (auto-sync 워처가 감지할 수 있게) ────────────
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // ── 볼트 편집 편의 ────────────────────────────────────────
+  "files.encoding": "utf8",
+  "files.eol": "\r\n",
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "[cpp]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true
+  },
+
+  // 탐색기에서 빌드 결과물 숨기기
+  "files.exclude": {
+    "**/*.exe": true,
+    "**/*.o": true,
+    "**/__pycache__": true
+  },
+
+  // 태스크가 folderOpen 으로 자동 실행되도록 허용
+  "task.allowAutomaticTasks": "on"
+}

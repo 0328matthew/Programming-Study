@@ -2,6 +2,44 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "자동 동기화 시작 (auto-sync)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/tools/auto-sync.ps1",
+        "-VaultPath", "${workspaceFolder}"
+      ],
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "reveal": "silent",
+        "panel": "dedicated",
+        "close": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "지금 바로 커밋 & 푸시",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", "${workspaceFolder}/tools/auto-sync.ps1",
+        "-VaultPath", "${workspaceFolder}",
+        "-Once"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
       "label": "C++: Build active file",
       "type": "shell",
       "command": "C:/msys64/ucrt64/bin/g++.exe",
@@ -43,7 +81,7 @@
       "group": "build"
     },
     {
-      "label": "C++: Build all files",
+      "label": "C++: Build all files in current folder",
       "type": "shell",
       "command": "C:/msys64/ucrt64/bin/g++.exe",
       "args": [
@@ -51,12 +89,12 @@
         "-Wall",
         "-Wextra",
         "-std=c++20",
-        "${workspaceFolder}/*.cpp",
+        "${fileDirname}/*.cpp",
         "-o",
-        "${workspaceFolder}/program.exe"
+        "${fileDirname}/program.exe"
       ],
       "options": {
-        "cwd": "${workspaceFolder}"
+        "cwd": "${fileDirname}"
       },
       "problemMatcher": "$gcc",
       "group": "build"
