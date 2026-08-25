@@ -6,6 +6,9 @@ using namespace std;
 
 int main() {
     int array[20] = {0};
+    int oddArray[20] = {0};
+    int evenArray[20]
+
     srand(static_cast<unsigned>(time(nullptr)));
 
     for(int i = 0; i < 20; i++) {
