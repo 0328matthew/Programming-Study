@@ -26,7 +26,9 @@ int main() {
             k++;
         }
     }
-    for(int i )
+    for(int i = 0; i < 20; i++) {
+        cout << "원래 배열의 " << i << "번째 요소는 " << array
+    }
 
 
 
