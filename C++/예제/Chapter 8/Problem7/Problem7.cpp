@@ -31,7 +31,9 @@ int main() {
     }
     cout << endl;
 
-    for(int i = 0; i < j; )
+    for(int i = 0; i < j + 1; i++) {
+        
+    }
 
 
 
