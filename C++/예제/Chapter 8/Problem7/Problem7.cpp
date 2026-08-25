@@ -18,11 +18,11 @@ int main() {
     }
     for(int i = 0; i < 20; i++) {
         if(array[i] % 2 == 0) {
-            evenArray[i] = evenArray[j];
+            evenArray[J] = evenArray[i];
             j++;
         }
         else {
-            array[i] = oddArray[k];
+            oddArray[j] = array[i];
             k++;
         }
     }
