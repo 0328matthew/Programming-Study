@@ -27,8 +27,11 @@ int main() {
         }
     }
     for(int i = 0; i < 20; i++) {
-        cout << "원래 배열의 " << i << "번째 요소는 " << array
+        cout << "원래 배열의 " << i << "번째 요소는 " << array[i] << " 입니다." << endl;
     }
+    cout << endl;
+
+    for(int i = 0; i < j; )
 
 
 
