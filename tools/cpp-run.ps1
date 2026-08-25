@@ -43,10 +43,16 @@ if (-not (Test-Path $compiler)) {
 
 if ($Mode -ne "run-only") {
     Write-Host "[빌드] $compiler $stdFlag -Wall -Wextra"
-    & $compiler -g -Wall -Wextra $stdFlag $Source -o $exe
-    if ($LASTEXITCODE -ne 0) {
-        Write-Host "[실패] 컴파일 오류 (exit $LASTEXITCODE)"
-        exit $LASTEXITCODE
+    # ld.exe 는 -o 로 받은 출력 경로에 비ASCII 문자(한글 폴더명)가 있으면
+    # "Illegal byte sequence" 로 죽는다. 소스 폴더로 이동한 뒤 파일 이름만
+    # 넘겨서 인자에 한글이 아예 들어가지 않게 한다.
+    Push-Location $dir
+    & $compiler -g -Wall -Wextra $stdFlag (Split-Path -Leaf $Source) -o "$name.exe"
+    $buildCode = $LASTEXITCODE
+    Pop-Location
+    if ($buildCode -ne 0) {
+        Write-Host "[실패] 컴파일 오류 (exit $buildCode)"
+        exit $buildCode
     }
     Write-Host "[성공] $exe"
 }
