@@ -22,8 +22,15 @@ int main() {
             j++;
         }
         else {
-            array[i] = oddArray[k]
+            array[i] = oddArray[k];
+            k++;
         }
     }
+    for(int i )
+
+
+
+    system("pause");
+    return 0;
 
 }
