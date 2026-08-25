@@ -6,5 +6,7 @@ using namespace std;
 
 int main() {
     int array[20] = {0};
-    srand()
+    srand(static_cast<unsigned>(time(nullptr)));
+
+    
 }
