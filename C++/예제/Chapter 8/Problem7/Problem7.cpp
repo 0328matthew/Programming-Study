@@ -1,3 +1,9 @@
 #include <iostream>
 #include <cmath>
-#include <
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+
+}
