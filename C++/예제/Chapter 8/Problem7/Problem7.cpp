@@ -36,10 +36,8 @@ int main() {
     }
     cout << endl;
     for(int i = 0; i < k + 1; k++) {
-        cout << "홀수 배열의 " << i << "번째 요소는 " << e
+        cout << "홀수 배열의 " << i << "번째 요소는 " << oddArray[i] << " 입니다." << endl;
     }
-
-
 
     system("pause");
     return 0;
