@@ -12,5 +12,4 @@ int main() {
         array[i] = rand() %101;
     }
 
-    
 }
