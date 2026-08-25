@@ -18,7 +18,7 @@ int main() {
     }
     for(int i = 0; i < 20; i++) {
         if(array[i] % 2 == 0) {
-            evenArray[j] = evenArray[i];
+            evenArray[j] = array[i];
             j++;
         }
         else {
