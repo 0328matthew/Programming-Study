@@ -22,7 +22,7 @@ int main() {
             j++;
         }
         else {
-            oddArray[j] = array[i];
+            oddArray[k] = array[i];
             k++;
         }
     }
