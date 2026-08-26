@@ -17,11 +17,13 @@ int main() {
         array1[SIZE] = 100 + rand() % 100;
         array2[SIZE] = 100 + rand() % 100;
     }
-    for(int i = 0; i < 2 * SIZE; i++) {
+    for(int i = 0; i < SIZE; i++) {
         newArray[i] = array1[i];
     }
 
-    for(int i = )
+    for(int i = 5; i < 2 * SIZE; i++) {
+        newArray[]
+    }
 
 
 
