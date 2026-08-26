@@ -12,6 +12,8 @@ int main() {
 
     srand(static_cast<unsigned>(time(nullptr)));
 
-    for(int i = 0; i < )
+    for(int i = 0; i < SIZE; i++) {
+        array1[SIZE] = rand();
+    }
 
 }
