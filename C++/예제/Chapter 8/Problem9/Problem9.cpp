@@ -6,6 +6,9 @@ const int SIZE = 5;
 
 int main() {
 
-    array1
+    int array1[SIZE] = {0};
+    int array2[SIZE] = {0};
+
+    
 
 }
