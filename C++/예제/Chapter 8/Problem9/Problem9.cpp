@@ -10,6 +10,8 @@ int main() {
     int array1[SIZE] = {0};
     int array2[SIZE] = {0};
 
-    srand()
+    srand(static_cast<unsigned>(time(nullptr)));
+
+    for(int i = 0; i < )
 
 }
