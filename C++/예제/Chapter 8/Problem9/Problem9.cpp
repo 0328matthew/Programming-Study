@@ -9,7 +9,7 @@ int main() {
 
     int array1[SIZE] = {0};
     int array2[SIZE] = {0};
-    int newArray[SIZE]
+    int newArray[2 * SIZE] = {0};
 
     srand(static_cast<unsigned>(time(nullptr)));
 
