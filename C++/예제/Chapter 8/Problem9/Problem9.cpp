@@ -22,7 +22,7 @@ int main() {
     }
 
     for(int i = 5; i < 2 * SIZE; i++) {
-        newArray[]
+        newArray[i]
     }
 
 
