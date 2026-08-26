@@ -14,17 +14,36 @@ int main() {
     srand(static_cast<unsigned>(time(nullptr)));
 
     for(int i = 0; i < SIZE; i++) {
-        array1[SIZE] = 100 + rand() % 100;
-        array2[SIZE] = 100 + rand() % 100;
+        array1[i] = 100 + rand() % 100;
+        array2[i] = 100 + rand() % 100;
     }
+
     for(int i = 0; i < SIZE; i++) {
         newArray[i] = array1[i];
     }
 
     for(int i = 5; i < 2 * SIZE; i++) {
-        newArray[i]
+        newArray[i] = array2[i - 5];
+        }
+
+    for(int i = 0; i < SIZE; i++) {
+        cout <<array1[i] << " ";
     }
 
+    cout << endl;
+
+    for(int i = 0; i < SIZE; i++) {
+        cout <<array2[i] << " ";
+    }
+
+    cout << endl;
+
+    for(int i = 0; i < 2 * SIZE; i++) {
+        cout <<newArray[i] << " ";
+    }
+
+    system("pause");
+    return 0;
 
 
 }
