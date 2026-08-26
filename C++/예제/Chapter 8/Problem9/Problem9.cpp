@@ -17,6 +17,9 @@ int main() {
         array1[SIZE] = 100 + rand() % 100;
         array2[SIZE] = 100 + rand() % 100;
     }
+    for(int i = 0; i < 2 * SIZE; i++) {
+        
+    }
 
 
 
