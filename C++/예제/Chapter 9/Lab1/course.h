@@ -2,4 +2,28 @@
 #define COURSE_H
 #include <iostream>
 #include <fstream>
-using namespace;
+using namespace std;
+
+class Course {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+};
