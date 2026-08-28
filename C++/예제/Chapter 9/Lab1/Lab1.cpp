@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <cmath>
 
-Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn); {
+Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn) {
     inputFile.open(inputFileName);
     students = new Student[numOfStds];
     getInput();
