@@ -49,7 +49,7 @@ void Course::setDeviations() {
     standardDeviation = sqrt(standardDeviation) / numOfStds;
 }
 
-void Course::printResult() const [
+void Course::printResult() const {
     cout << endl;
     cout << " ID   점수   등급    편차" << endl;
     cout << "---- ----- ----- -------" << endl;
@@ -65,4 +65,4 @@ void Course::printResult() const [
     cout << "평균 점수: " << fixed << setw(4);
     cout << setprecision(2) << averageScore << endl;
     cout << "표준 편차: " << standardDeviation;
-]
+}
