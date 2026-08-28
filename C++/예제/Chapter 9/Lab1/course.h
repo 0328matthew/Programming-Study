@@ -14,6 +14,7 @@ class Course {
 
         Student* students;
         double average Score;
+        
 
 
 
