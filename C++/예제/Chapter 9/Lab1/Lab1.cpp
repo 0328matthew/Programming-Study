@@ -8,7 +8,7 @@ Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn); {
     getInput();
     setGrades();
     setAverage();
-    setDeviation();
+    setDeviations();
     printResult();
 }
 
@@ -32,4 +32,9 @@ void Course::setGrades() {
     }
 }
 
-void Course::setAverage()
+void Course::setAverage() {
+    int sum = 0;
+    for(int i = 0; i < numOfStds; i++) {
+
+    }
+}
