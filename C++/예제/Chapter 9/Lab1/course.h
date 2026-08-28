@@ -13,8 +13,9 @@ class Course {
         struct Student {int id; int score; char grade; double deviation;};
 
         Student* students;
-        double average Score;
-        
+        double averageScore;
+        double standardDeviation;
+
 
 
 
