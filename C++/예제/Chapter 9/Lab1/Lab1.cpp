@@ -59,5 +59,7 @@ void Course::printResult() const [
         cout << setw(14) << noshowpoint << noshowpos;
         cout << setw(10) << right << students[i].grade;
         cout << fixed << setw(20) << right << setprecision(2);
+        cout << showpoint << showpos;
+        cout << students[i].deviation << endl;
     }
 ]
