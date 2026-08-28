@@ -1,5 +1,4 @@
 #include "course.h"
-#include <iostream>
 #include <iomanip>
 #include <cmath>
 
