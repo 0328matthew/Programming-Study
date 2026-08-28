@@ -22,7 +22,8 @@ class Course {
         void printResult() const;
 
     public:
-        
+        Cours(int num0fStds; const char* inputFileName);
+        ~Courese();
     
 
 
