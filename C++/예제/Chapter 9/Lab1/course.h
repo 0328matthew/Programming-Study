@@ -9,6 +9,8 @@ class Course {
     private:
         int numOfStds;
         const char* inputFileName;
+        ifstream inputFiles;
+        struct Student {int id; int score; char grade; double deviation;}
 
 
 
