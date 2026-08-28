@@ -18,5 +18,8 @@ Course::~Course() {
 }
 
 void Course::getInput() {
-    
+    for(int i = 0; i < numOfStds; i++) {
+        inputFile >> students[i].id;
+        inputFile >> students[i]
+    }
 }
