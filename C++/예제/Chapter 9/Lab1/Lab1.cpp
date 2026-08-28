@@ -52,5 +52,6 @@ void Course::setDeviations() {
 void Course::printResult() const [
     cout << endl;
     cout << "ID    점수    등급    편차" << endl;
-    cout << 
+    cout << "---- ----- ----- -------" << endl;
+    
 ]
