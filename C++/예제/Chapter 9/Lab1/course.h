@@ -6,6 +6,9 @@ using namespace std;
 
 class Course {
 
+    private:
+        int numOfStds;
+        const char* inputFileName;
 
 
 
@@ -25,5 +28,5 @@ class Course {
 
 
 
-    
+
 };
