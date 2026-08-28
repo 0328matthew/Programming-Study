@@ -2,4 +2,10 @@
 #include <iomanip>
 #include <cmath>
 
-Course::Course(int num, const char* ifn) : num
+Course::Course(int num, const char* ifn) : num0fStds(num), inputFileName(ifn); {
+    
+
+
+
+
+}
