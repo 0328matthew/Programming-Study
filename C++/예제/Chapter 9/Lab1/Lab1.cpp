@@ -62,4 +62,6 @@ void Course::printResult() const [
         cout << showpoint << showpos;
         cout << students[i].deviation << endl;
     }
+    cout << "Æò±Õ Á¡¼ö: " << fixed << setw(4);
+    cout << setprecision(2) << 
 ]
