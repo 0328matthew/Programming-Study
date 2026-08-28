@@ -1,4 +1,5 @@
 #include "course.h"
+#include <iostream>
 #include <iomanip>
 #include <cmath>
 
@@ -64,5 +65,5 @@ void Course::printResult() const [
     }
     cout << "평균 점수: " << fixed << setw(4);
     cout << setprecision(2) << averageScore << endl;
-    cout << "표준 편차: " << 
+    cout << "표준 편차: " << standardDeviation;
 ]
