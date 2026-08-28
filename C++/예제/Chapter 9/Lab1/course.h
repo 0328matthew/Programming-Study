@@ -10,7 +10,10 @@ class Course {
         int numOfStds;
         const char* inputFileName;
         ifstream inputFiles;
-        struct Student {int id; int score; char grade; double deviation;}
+        struct Student {int id; int score; char grade; double deviation;};
+
+        Student* students;
+        double average Score;
 
 
 
