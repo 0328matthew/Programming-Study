@@ -15,6 +15,11 @@ class Course {
         Student* students;
         double averageScore;
         double standardDeviation;
+        void getInput();
+        void setGrades();
+        void setAverage();
+        void setDeviations();
+        void 
 
 
 
