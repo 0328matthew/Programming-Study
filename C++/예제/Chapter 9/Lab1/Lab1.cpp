@@ -3,7 +3,10 @@
 #include <cmath>
 
 Course::Course(int num, const char* ifn) : num0fStds(num), inputFileName(ifn); {
-    
+    inputFile.open(inputFileName);
+
+
+
 
 
 
