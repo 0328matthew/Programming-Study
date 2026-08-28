@@ -43,7 +43,7 @@ void Course::setAverage() {
 void Course::setDeviations() {
     standardDeviation = 0.0;
     for(int i = 0; i < numOfStds; i++) {
-        students[i].deviaiton = student[i].score - averageScore;
+        students[i].deviaiton = students[i].score - averageScore;
         standardDeviation += pow(students[i].deviation, 2);
     }
     standardDeviation = sqrt(standardDeviation) / numOfStds;
