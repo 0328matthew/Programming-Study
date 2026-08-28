@@ -25,5 +25,5 @@ void Course::getInput() {
 }
 
 void Course::setGrades() {
-    const charGrades
+    const charGrades[] = {'F', 'F', 'F', 'F', 'F', 'F', 'D', }
 }
