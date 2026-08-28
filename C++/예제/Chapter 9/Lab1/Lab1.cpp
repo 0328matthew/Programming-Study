@@ -41,5 +41,6 @@ void Course::setAverage() {
 }
 
 void Course::setDeviations() {
-    
+    standardDeviation = 0.0;
+    for(int i = 0; i < numOfStds; i++) {}
 }
