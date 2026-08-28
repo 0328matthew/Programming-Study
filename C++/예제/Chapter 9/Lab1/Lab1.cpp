@@ -48,3 +48,7 @@ void Course::setDeviations() {
     }
     standardDeviation = sqrt(standardDeviation) / numOfStds;
 }
+
+void Course::printResult() const [
+    
+]
