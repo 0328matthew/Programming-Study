@@ -28,6 +28,8 @@ void Course::setGrades() {
     char charGrades[] = {'F', 'F', 'F', 'F', 'F', 'F', 'D', 'C', 'B', 'A', 'A'};
     for(int i = 0; i < numOfStds; i++) {
         int index = students[i].score / 10;
-        students[i].grade = charGrades
+        students[i].grade = charGrades[index];
     }
 }
+
+void Course::setAverage()
