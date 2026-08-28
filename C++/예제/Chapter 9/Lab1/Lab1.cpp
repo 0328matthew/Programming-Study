@@ -25,6 +25,8 @@ void Course::getInput() {
 }
 
 void Course::setGrades() {
-    const charGrades[] = {'F', 'F', 'F', 'F', 'F', 'F', 'D', 'C', 'B', 'A', 'A'};
-    for(int i = 0; i < )
+    char charGrades[] = {'F', 'F', 'F', 'F', 'F', 'F', 'D', 'C', 'B', 'A', 'A'};
+    for(int i = 0; i < numOfStds; i++) {
+        
+    }
 }
