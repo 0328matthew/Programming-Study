@@ -16,3 +16,7 @@ Course::~Course() {
     delete[] students;
     inputFile.close();
 }
+
+void Course::getInput() {
+    
+}
