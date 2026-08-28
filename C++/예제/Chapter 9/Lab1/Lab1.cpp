@@ -56,6 +56,7 @@ void Course::printResult() const [
     for(int i = 0; i < numOfStds; i++) {
         cout << setw(4) << noshowpoint << noshowpos;
         cout << right << students[i].id;
-        cout << setw()
+        cout << setw(14) << noshowpoint << noshowpos;
+        cout << setw(10) << right << students[i]
     }
 ]
