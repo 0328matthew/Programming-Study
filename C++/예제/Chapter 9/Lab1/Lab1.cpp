@@ -8,6 +8,12 @@ Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn); {
     getInput();
     setGrades();
     setAverage();
+    setDeviation();
+    printResult();
+
+    Course::~Course() {
+        
+    }
 
 
 
