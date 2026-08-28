@@ -55,6 +55,7 @@ void Course::printResult() const [
     cout << "---- ----- ----- -------" << endl;
     for(int i = 0; i < numOfStds; i++) {
         cout << setw(4) << noshowpoint << noshowpos;
-        
+        cout << right << students[i].id;
+        cout << setw()
     }
 ]
