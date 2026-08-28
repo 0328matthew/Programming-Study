@@ -19,7 +19,11 @@ class Course {
         void setGrades();
         void setAverage();
         void setDeviations();
-        void 
+        void printResult() const;
+
+    public:
+        
+    
 
 
 
