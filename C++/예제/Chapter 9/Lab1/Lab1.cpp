@@ -11,3 +11,8 @@ Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn); {
     setDeviation();
     printResult();
 }
+
+Course::~Course() {
+    delete[] students;
+    inputFile.close();
+}
