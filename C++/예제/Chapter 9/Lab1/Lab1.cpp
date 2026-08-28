@@ -4,7 +4,8 @@
 
 Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn); {
     inputFile.open(inputFileName);
-    students = 
+    students = new Student[numOfStds];
+    
 
 
 
