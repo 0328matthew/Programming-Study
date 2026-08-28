@@ -35,7 +35,7 @@ void Course::setGrades() {
 void Course::setAverage() {
     int sum = 0;
     for(int i = 0; i < numOfStds; i++) {
-        sum += students[i],score;
+        sum += students[i].score;
     }
-    
+    averageScore = static_cast<double>(sum)
 }
