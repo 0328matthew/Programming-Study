@@ -10,14 +10,4 @@ Course::Course(int num, const char* ifn) : numOfStds(num), inputFileName(ifn); {
     setAverage();
     setDeviation();
     printResult();
-
-    Course::~Course() {
-        
-    }
-
-
-
-
-
-
 }
