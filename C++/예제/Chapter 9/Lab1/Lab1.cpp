@@ -63,5 +63,6 @@ void Course::printResult() const [
         cout << students[i].deviation << endl;
     }
     cout << "평균 점수: " << fixed << setw(4);
-    cout << setprecision(2) << 
+    cout << setprecision(2) << averageScore << endl;
+    cout << "표준 편차: " << 
 ]
