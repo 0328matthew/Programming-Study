@@ -5,9 +5,9 @@ class Array {
 
     private:
 
-    int capacity;
-    int size;
-    int* arr;
+        int capacity;
+        int size;
+        int* arr;
 
     public:
 
