@@ -24,6 +24,9 @@ int main() {
 
     cout << "matrix1 - matrix2ÀÇ °á°ú" << endl;
     Matrix subResult(3, 4);
-    matrix2.add
+    matrix2.subtract(matrix2, subResult);
+    subResult.print();
+
+    cout << ""
 
 }
