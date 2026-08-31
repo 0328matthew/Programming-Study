@@ -1,28 +1,24 @@
-#include <iostream>
+#include "fraction.h"
 #include <cmath>
 #include <ctime>
 #include <cstdlib>
-using namespace std;
-
-double& getMax(double& a, double& b, double& c);
 
 int main() {
+
     srand(static_cast<unsigned int>(time(nullptr)));
 
-    double num1 = rand();
-    double num2 = rand();
-    double num3 = rand();
+    Fraction num1 = Fraction(rand(), rand() % RAND_MAX + 1);
+    Fraction num2 = Fraction(rand(), rand() % RAND_MAX + 1);
+    Fraction num3 = Fraction(rand(), rand() % RAND_MAX + 1);
 
-    cout << num1 << "  " << num2 << " " << num3 << " " << endl;
 
-    double& maxNum = getMax(num1, num2, num3);
+    cout << num1.getNumer() << " / " << num1.getDenom() << "   " << num2.getNumer() << " / " << num2.getDenom() << "   " << num3.getNumer() << " / " << num3.getDenom() << endl;
 
-    cout << maxNum << endl;
+    Fraction& maxNum = larger(num1, num2, num3);
+
+    cout << maxNum.getNumer() << " / " << maxNum.getDenom() << endl;
 
     system("pause");
     return 0;
 }
 
-double& getMax(double& a, double& b, double& c) {
-    
-}

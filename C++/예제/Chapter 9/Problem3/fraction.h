@@ -33,5 +33,6 @@ class Fraction {
 };
 
 Fraction& larger(Fraction& fract1, Fraction& fract2, Fraction& fract3);
+Fraction& multiply(Fraction& fract1, Fraction& fract2, Fraction& result);
 
 #endif

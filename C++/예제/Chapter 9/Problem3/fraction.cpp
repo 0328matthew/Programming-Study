@@ -84,3 +84,20 @@ Fraction& larger(Fraction& fract1, Fraction& fract2, Fraction& fract3) {
             return fract3;
     }
 }
+
+Fraction& multiply(Fraction& fract1, Fraction& fract2, Fraction& result) {
+    int numer1 = fract1.getNumer();
+    int denom1 = fract1.getDenom();
+    int numer2 = fract2.getNumer();
+    int denom2 = fract2.getDenom();
+    int numResult = 0;
+    int denResult = 0;
+
+    numResult = numer1 * numer2;
+    denResult = denom1 * denom2;
+
+    result.setNumer(numResult);
+    result.setDenom(denResult);
+
+    return result;    
+}
