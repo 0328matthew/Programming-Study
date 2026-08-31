@@ -15,12 +15,12 @@ int main() {
 
     cout << num1 << "  " << num2 << "  " << num3 << endl;
 
-    int& maxNum = int& getMax(num1, num2, num3);
+    int& maxNum = getMax(num1, num2, num3);
 
     cout << "제일 큰 정수는 " << maxNum << "입니다.";
 }
 
-int getMax(int& a, int& b, int& c) {
+int& getMax(int& a, int& b, int& c) {
     if(a >= b && a >= c) {
         return a;
     }
