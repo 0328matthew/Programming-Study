@@ -18,6 +18,9 @@ int main() {
     int& maxNum = getMax(num1, num2, num3);
 
     cout << "제일 큰 정수는 " << maxNum << "입니다.";
+
+    system("pause");
+    return 0;
 }
 
 int& getMax(int& a, int& b, int& c) {
