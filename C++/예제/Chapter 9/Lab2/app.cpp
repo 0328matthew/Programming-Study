@@ -27,6 +27,8 @@ int main() {
     matrix2.subtract(matrix2, subResult);
     subResult.print();
 
-    cout << ""
+    cout << "matrix1 * matrix3ÀÇ °á°ú" << endl;
+    Matrix mulResult(3, 2);
+    matrix1.multiply(matrix3, mulResult)
 
 }
