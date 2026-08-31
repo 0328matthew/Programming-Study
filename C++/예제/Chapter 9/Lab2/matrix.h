@@ -23,11 +23,5 @@ class Matrix {
         void subtract(const Matrix& second, Matrix& result) const;
         void multiply(const Matrix& second, Matrix& result) const;
         void print() const;
-
-
-
-
-
-
-
 };
+#endif
