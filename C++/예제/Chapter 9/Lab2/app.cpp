@@ -9,6 +9,10 @@ int main() {
 
     cout << "matrix2" << endl;
     Matrix matrix2(3, 4);
-    
+    matrix2.setup();
+    matrix2.print();
+
+    cout << "matrix3" << endl;
+    Matrix matrix3(3, 4)
 
 }
