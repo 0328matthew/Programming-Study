@@ -15,7 +15,7 @@ int main() {
 
     cout << num1 << "  " << num2 << "  " << num3 << endl;
 
-    int& maxNum = int getMax(num1, num2, num3);
+    int& maxNum = int& getMax(num1, num2, num3);
 
     cout << "제일 큰 정수는 " << maxNum << "입니다.";
 }
