@@ -54,8 +54,10 @@ void Matrix::multiply(const Matrix& second, Matrix& result) const {
         for(int j = 0; j < colSize; j++) {
             result.ptr[i][j] = 0;
             for(int k = 0; k < colSize; k++) {
-                result.ptr[i][j] += ptr[i][k]
+                result.ptr[i][j] += ptr[i][k] * second.ptr[k][j];
             }
         }
     }
 }
+
+vodi Matrix::print()
