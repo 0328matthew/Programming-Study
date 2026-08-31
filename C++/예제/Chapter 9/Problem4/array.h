@@ -14,6 +14,4 @@ class Array {
         void Array::insert();
         void Array::print();
 
-
-
 };
