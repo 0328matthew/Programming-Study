@@ -1,5 +1,5 @@
 #include "array.h"
 
-Array::array(c, s) : capacity(c), size(s) {
-    
+Array::Array(int c, int s) : capacity(c), size(s) {
+
 }
