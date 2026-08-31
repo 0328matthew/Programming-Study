@@ -1,5 +1,7 @@
 #include <iostream>
+#include <cstdlib>
 #include "array.h"
+using namespace std;
 
 int main() {
     Array array1(4);
