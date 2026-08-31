@@ -45,8 +45,10 @@ void Matrix::subtract(const Matrix& second, Matrix& result) const {
 
 }
 
-void Matrix::multiply(const Matrxi& second, Matrix& result) const {
+void Matrix::multiply(const Matrix& second, Matrix& result) const {
     assert(colSize == second.rowSize);
-    assert(result.rowSize == second.colSize);
+    assert(result.rowSize == rowSize);
     assert(result.colSize == second.colSize);
+
+    for(int i = 0; i < secodn)
 }
