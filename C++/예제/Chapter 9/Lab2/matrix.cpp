@@ -53,7 +53,9 @@ void Matrix::multiply(const Matrix& second, Matrix& result) const {
     for(int i = 0; i < rowSize; i++) {
         for(int j = 0; j < colSize; j++) {
             result.ptr[i][j] = 0;
-            
+            for(int k = 0; k < colSize; k++) {
+                result.ptr[i][j] += ptr[i][k]
+            }
         }
     }
 }
