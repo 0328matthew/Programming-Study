@@ -4,10 +4,8 @@
 #include <cstdlib>
 using namespace std;
 
-double 
-
-
+double& getMax(double& a, double& b, double& c);
 
 int main() {
-
+    
 }
