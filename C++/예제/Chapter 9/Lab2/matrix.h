@@ -12,7 +12,11 @@ class Matrix {
     private:
         int rowSize;
         int colSize;
-        int
+        int** ptr;
+    
+    public:
+        Matrix(int rowSize, int colSize);
+        ~Matrix();
 
 
 
