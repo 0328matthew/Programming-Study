@@ -28,7 +28,7 @@ void Matrix::add(const Matrix& second, Matrix& result) const {
 
     for(int i = 0; i < second.rowSize; i++) {
         for(int j = 0; j < second.colSize; j++) {
-            result.ptr[i][j] = ptr[i][j]
+            result.ptr[i][j] = ptr[i][j] + second.ptr[i][j];
         }
     }
 }
