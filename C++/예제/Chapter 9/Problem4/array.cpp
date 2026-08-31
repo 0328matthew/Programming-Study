@@ -18,5 +18,9 @@ void Array::insert(int value) {
 }
 
 void Array::print() const {
-    for
+    for(int i = 0; i < size; i++) {
+        cout << arr[i] << " ";
+    }
+
+    cout << "현재 크기는:"
 }
