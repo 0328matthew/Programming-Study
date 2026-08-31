@@ -4,6 +4,10 @@
 #include <cstdlib>
 using namespace std;
 
+double 
+
+
+
 int main() {
-    
+
 }
