@@ -13,11 +13,12 @@ int main() {
     matrix2.print();
 
     cout << "matrix3" << endl;
-    Matrix matrix3(3, 4);
+    Matrix matrix3(4,2 );
     matrix3.setup();
     matrix3.print();
 
     cout << "matrix1 + matrix 2ÀÇ °á°ú" << endl;
+    Matrix addResult(3, 4);
     
 
 }
