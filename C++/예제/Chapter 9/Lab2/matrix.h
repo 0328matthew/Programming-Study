@@ -7,3 +7,18 @@
 #include <cassert>
 using namespace std;
 
+class Matrix {
+    
+    private:
+        int rowSize;
+        int colSize;
+        int
+
+
+
+
+
+
+
+
+};
