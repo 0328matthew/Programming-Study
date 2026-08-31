@@ -11,6 +11,9 @@ class Array {
 
     public:
 
+        void Array::insert();
+        void Array::print();
+
 
 
 };
