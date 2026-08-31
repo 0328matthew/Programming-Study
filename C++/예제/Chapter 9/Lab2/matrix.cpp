@@ -6,3 +6,7 @@ Matrix::Matrix(int r, int c) : rowSize(r), colSize(c) {
         ptr[i] = new int[colSize];
     }
 }
+
+Matrix::~Matrix() {
+    delete[] ptr[i];
+}
