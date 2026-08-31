@@ -17,6 +17,10 @@ class Matrix {
     public:
         Matrix(int rowSize, int colSize);
         ~Matrix();
+        
+        void setup();
+        void add(const Matrix& second, Matrix& resulf) const;
+        void 
 
 
 
