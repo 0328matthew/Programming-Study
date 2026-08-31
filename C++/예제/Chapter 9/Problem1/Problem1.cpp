@@ -11,10 +11,13 @@ int main() {
     int num1 = rand();
     int num2 = rand();
     int num3 = rand();
+    cout << ""
+
+
 
     int& maxNum = getMax(num1, num2, num3);
 
-    cout << "제일 큰 정수는" << g ;
+    cout << "제일 큰 정수는 " << maxNum << "입니다.";
 }
 
 int getMax(int a, int b, int c) {
