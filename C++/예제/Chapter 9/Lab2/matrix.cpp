@@ -60,7 +60,7 @@ void Matrix::multiply(const Matrix& second, Matrix& result) const {
     }
 }
 
-vodi Matrix::print() const {
+void Matrix::print() const {
     for(int i = 0; i < rowSize; i++) {
         for(int j = 0; j < colSize; j++) {
             cout << setw(5) << ptr[i][j];
