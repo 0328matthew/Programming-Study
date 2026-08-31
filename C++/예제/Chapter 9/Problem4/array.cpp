@@ -1,6 +1,6 @@
 #include "array.h"
 
-Array::Array(int c) : capacity(c) {
+Array::Array(int c) : capacity(c), size(0) {
     arr = new int[capacity];
 }
 
