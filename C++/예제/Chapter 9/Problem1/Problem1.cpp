@@ -11,9 +11,8 @@ int main() {
     int num1 = rand();
     int num2 = rand();
     int num3 = rand();
+
     cout << num1 << "  " << num2 << "  " << num3 << endl;
-
-
 
     int& maxNum = getMax(num1, num2, num3);
 
