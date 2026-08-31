@@ -11,7 +11,7 @@ int main() {
     int num1 = rand();
     int num2 = rand();
     int num3 = rand();
-    cout << ""
+    cout << num1 << "  " << num2 << "  " << num3 << endl;
 
 
 
