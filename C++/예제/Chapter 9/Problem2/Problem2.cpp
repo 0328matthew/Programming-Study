@@ -15,5 +15,5 @@ int main() {
 
     cout << num1 << "  " << num2 << " " << num3 << " " << endl;
 
-    double maxNum = getMax&
+    double& maxNum = getMax(double& num1, double& num2, double& num3);
 }
