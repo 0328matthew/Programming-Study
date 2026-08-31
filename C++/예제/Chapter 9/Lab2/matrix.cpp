@@ -32,3 +32,7 @@ void Matrix::add(const Matrix& second, Matrix& result) const {
         }
     }
 }
+
+void Matrix::subtract(const Matrix& second, Matrix& result) const {
+    
+}
