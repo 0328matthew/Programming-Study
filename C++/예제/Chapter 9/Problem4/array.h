@@ -13,6 +13,12 @@ class Array {
         int* arr;
 
     public:
+        
+        Array();
+        ~Array();
+
+
+
 
         void Array::insert();
         void Array::print();
