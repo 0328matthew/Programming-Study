@@ -8,6 +8,6 @@ Array::~Array() {
     delete[] arr;
 }
 
-Array::insert() {
+void Array::insert(int value) {
     
 }
