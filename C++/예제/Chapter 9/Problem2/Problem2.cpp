@@ -19,6 +19,10 @@ int main() {
 
     cout << maxNum << endl;
 
-    system("pause")
+    system("pause");
     return 0;
+}
+
+double& getMax(double& a, double& b, double& c) {
+    
 }
