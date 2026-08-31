@@ -14,7 +14,7 @@ int main() {
 
     int getMax(num1, num2, num3);
 
-    cout << ;
+    cout << " " ;
 }
 
 int getMax(int a, int b, int c) {
