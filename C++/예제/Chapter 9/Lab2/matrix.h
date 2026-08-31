@@ -21,8 +21,8 @@ class Matrix {
         void setup();
         void add(const Matrix& second, Matrix& result) const;
         void subtract(const Matrix& second, Matrix& result) const;
-        void 
-
+        void multiply(const Matrix& second, Matrix& result) const;
+        void print() const;
 
 
 
