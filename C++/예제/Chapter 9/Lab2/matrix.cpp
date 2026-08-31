@@ -21,3 +21,7 @@ void Matrix::setup() {
         }
     }
 }
+
+void Matrix::add(const Matrix& second, Matrix& result) const {
+    
+}
