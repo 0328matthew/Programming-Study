@@ -9,5 +9,7 @@ Array::~Array() {
 }
 
 void Array::insert(int value) {
-    
+    if(size >= capacity) {
+        cout << "배열이 꽉 차서 더 이상 요소를 추가할 수 없습니다." << endl;
+    }
 }
