@@ -20,7 +20,7 @@ class Matrix {
         
         void setup();
         void add(const Matrix& second, Matrix& resulf) const;
-        void 
+        void subt
 
 
 
