@@ -22,5 +22,5 @@ void Array::print() const {
         cout << arr[i] << " ";
     }
 
-    cout << "현재 크기는:"
+    cout << "현재 배열의 크기는: " << size << "이고, 배열의 최대 크기는: " << capacity << " 입니다." << endl;
 }
