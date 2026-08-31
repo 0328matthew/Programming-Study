@@ -24,5 +24,7 @@ void Matrix::setup() {
 
 void Matrix::add(const Matrix& second, Matrix& result) const {
     assert(second.rowSize == rowSize && second.colSize == colSize);
-    assert()
+    assert(result.rowSize == rowSize && result.colSize == colSize);
+
+    
 }
