@@ -24,7 +24,7 @@ int main() {
 
     cout << "matrix1 - matrix2의 결과" << endl;
     Matrix subResult(3, 4);
-    matrix2.subtract(matrix2, subResult);
+    matrix1.subtract(matrix2, subResult);
     subResult.print();
 
     cout << "matrix1 * matrix3의 결과" << endl;
