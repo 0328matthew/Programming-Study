@@ -20,7 +20,7 @@ int main() {
     cout << "제일 큰 정수는 " << maxNum << "입니다.";
 }
 
-int getMax(int a, int b, int c) {
+int getMax(int& a, int& b, int& c) {
     if(a >= b && a >= c) {
         return a;
     }
