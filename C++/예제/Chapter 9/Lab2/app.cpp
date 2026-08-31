@@ -19,6 +19,9 @@ int main() {
 
     cout << "matrix1 + matrix 2ÀÇ °á°ú" << endl;
     Matrix addResult(3, 4);
+    matrix1.add(matrix2, addResult);
+    addResult.print();
+
     
 
 }
