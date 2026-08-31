@@ -17,8 +17,8 @@ class Array {
         Array(int capacity, int size);
         ~Array();
         
-        void Array::insert();
-        void Array::print();
+        void insert(int value);
+        void print() const;
 
 };
 
