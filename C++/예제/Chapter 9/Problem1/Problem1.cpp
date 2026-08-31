@@ -3,7 +3,7 @@
 #include <cstdlib>
 using namespace std;
 
-int getMax(int a, int b, int c);
+int getMax(int& a, int& b, int& c);
 
 int main() {
     srand(static_cast<unsigned int>(time(nullptr)));
@@ -18,5 +18,5 @@ int main() {
 }
 
 int getMax(int a, int b, int c) {
-
+    if(a >= b && a >= c
 }
