@@ -8,13 +8,13 @@ int getMax(int a, int b, int c);
 int main() {
     srand(static_cast<unsigned int>(time(nullptr)));
 
-    int a = rand();
-    int b = rand();
-    int c = rand();
+    int num1 = rand();
+    int num2 = rand();
+    int num3 = rand();
 
-    int getMax(a, b, c);
+    int getMax(num1, num2, num3);
 
-    cout << 
+    cout << ;
 }
 
 int getMax(int a, int b, int c) {
