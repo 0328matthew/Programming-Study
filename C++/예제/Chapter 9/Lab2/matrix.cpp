@@ -13,3 +13,5 @@ Matrix::~Matrix() {
     }
     delete[] ptr;
 }
+
+void Matrix::setup() 
