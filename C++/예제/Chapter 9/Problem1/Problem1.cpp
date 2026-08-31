@@ -12,7 +12,7 @@ int main() {
     int num2 = rand();
     int num3 = rand();
 
-    int& maxNum =int getMax(num1, num2, num3);
+    int& maxNum = getMax(num1, num2, num3);
 
     cout << "제일 큰 정수는" << g ;
 }
