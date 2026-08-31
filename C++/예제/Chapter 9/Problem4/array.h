@@ -14,7 +14,7 @@ class Array {
 
     public:
         
-        Array(int capacity, int size);
+        Array(int capacity);
         ~Array();
         
         void insert(int value);
