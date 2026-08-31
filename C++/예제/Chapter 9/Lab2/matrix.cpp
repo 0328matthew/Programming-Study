@@ -45,6 +45,7 @@ void Matrix::subtract(const Matrix& second, Matrix& result) const {
 
 }
 
-void Matrix::multiply(const Matrxi& second, Matrix& result) cosnt {
-    
+void Matrix::multiply(const Matrxi& second, Matrix& result) const {
+    assert(colSize == second.rowSize);
+    assert(rowSize == second.colSize)
 }
