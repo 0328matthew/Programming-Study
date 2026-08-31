@@ -14,4 +14,10 @@ Matrix::~Matrix() {
     delete[] ptr;
 }
 
-void Matrix::setup() 
+void Matrix::setup() {
+    for(int i = 0; i < rowSize; i++) {
+        for(int j = 0; j < colSize; j++) {
+            ptr[i][j] = rand() % 5 + 1;
+        }
+    }
+}
