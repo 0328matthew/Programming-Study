@@ -8,5 +8,8 @@ Matrix::Matrix(int r, int c) : rowSize(r), colSize(c) {
 }
 
 Matrix::~Matrix() {
-    delete[] ptr[i];
+    for(int i = 0; i < rowSize; i++) {
+        delete[] ptr[i];
+    }
+    delete[] ptr;
 }
