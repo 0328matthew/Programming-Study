@@ -11,7 +11,7 @@ class SortedArray {
         int capacity;
         int size;
         int* arr;
-        ind idx;
+        int idx;
 
     public:
         
