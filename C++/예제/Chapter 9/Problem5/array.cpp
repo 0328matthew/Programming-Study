@@ -13,7 +13,7 @@ void SortedArray::insert(int value) {
         cout << "배열이 꽉 차서 더 이상 요소를 추가할 수 없습니다." << endl;
         return;
     }
-
+ 
     int i = size - 1;
     while(i >= 0 && arr[i] > value) {
         arr[i + 1] = arr[i];
@@ -30,7 +30,6 @@ void SortedArray::remove(int idx) {
         return;
     }
 
-    // 지운 자리 뒤의 원소들을 한 칸씩 왼쪽으로 당겨 구멍을 메운다.
     for(int i = idx; i < size - 1; i++) {
         arr[i] = arr[i + 1];
     }
