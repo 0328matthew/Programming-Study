@@ -17,9 +17,11 @@ void SortedArray::insert(int value) {
     size++;
 }
 
-void SoretedArray::remove(int idx) [
-    if(idx == )
-]
+void SoretedArray::remove(int idx) {
+    if(idx = size) {
+        
+    }
+}
 
 void SortedArray::print() const {
     for(int i = 0; i < size; i++) {
