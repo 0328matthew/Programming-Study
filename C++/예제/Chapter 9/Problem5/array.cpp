@@ -17,6 +17,10 @@ void SortedArray::insert(int value) {
     size++;
 }
 
+void SoretedArray::remove(int idx) [
+    if(idx == )
+]
+
 void SortedArray::print() const {
     for(int i = 0; i < size; i++) {
         cout << arr[i] << " ";
