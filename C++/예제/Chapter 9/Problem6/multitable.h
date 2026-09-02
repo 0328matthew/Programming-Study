@@ -7,12 +7,12 @@ using namespace std;
 class MultiTable {
 
     private:
-        int* arr;
-        int size;
-        int capacity;
+        static const int MAX = 10;
+        int arr[MAX][MAX];
+        int size1, size2;
 
     public:
-        MultiTable(int capacity);
+        MultiTable(int size1, int size2);
         ~MultiTable();
 
         void print() const;
