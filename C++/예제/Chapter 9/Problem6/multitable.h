@@ -5,18 +5,15 @@ using namespace std;
 #define MULTITABLE_H
 
 class MultiTable {
-
     private:
         static const int MAX = 10;
-        int arr[MAX][MAX];
-        int size1, size2;
-
+        int** arr;
+        int size1;
+        int size2;
     public:
-        MultiTable(int size1, int size2);
+        MultiTable(int s1, int s2);
         ~MultiTable();
-
         void print() const;
-
 };
 
 #endif
