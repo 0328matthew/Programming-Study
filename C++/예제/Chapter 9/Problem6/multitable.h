@@ -1,4 +1,6 @@
 #include <iostream>
+using namespace std;
+
 #ifndef MULTITABLE_H
 #define MULTITABLE_H
 
@@ -16,9 +18,5 @@ class MultiTable {
         void print() const;
 
 };
-
-
-
-
 
 #endif
