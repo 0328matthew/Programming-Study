@@ -16,3 +16,15 @@ MultiTable::MultiTable(int s1, int s2) {
         for (int j = 0; j < size2; j++)
             arr[i][j] = (i + 1) * (j + 1);
 }
+
+MultiTable::~MultiTable() {
+    for (int i = 0; i < size1; i++) delete[] arr[i];
+    delete[] arr;
+}
+
+void MultiTable::print() const {
+    for (int i = 0; i < size1; i++) {
+        for (int j = 0; j < size2; j++) cout << setw(4) << arr[i][j];
+        cout << endl;
+    }
+}
