@@ -1,4 +1,5 @@
 #include "multitable.h"
+#include <iomanip>
 using namespace std;
 
 MultiTable::MultiTable(int s1, int s2) {
