@@ -6,6 +6,8 @@ class MultiTable {
 
     private:
         int* arr;
+        int size;
+        int capacity;
 
 
 
