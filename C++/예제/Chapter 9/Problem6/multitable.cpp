@@ -1,1 +1,7 @@
-#include "MULTITABLE_H"
+#include "multitable.h"
+#include <cmath>
+#include <iomanip>
+#include <cstdlib>
+
+using namespace std;
+
