@@ -11,6 +11,7 @@ class SortedArray {
         int capacity;
         int size;
         int* arr;
+        ind idx;
 
     public:
         
@@ -18,7 +19,7 @@ class SortedArray {
         ~SortedArray();
         
         void insert(int value);
-        void remove(int value);
+        void remove(int idx);
         void print() const;
 
 };
