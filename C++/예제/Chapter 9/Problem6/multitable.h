@@ -12,8 +12,8 @@ class MultiTable {
         int capacity;
 
     public:
-        multiTable(int capacity);
-        ~multiTable();
+        MultiTable(int capacity);
+        ~MultiTable();
 
         void print() const;
 
