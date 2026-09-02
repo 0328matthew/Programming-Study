@@ -2,7 +2,7 @@
 using namespace std;
 
 MultiTable::MultiTable(int s1, int s2) : size1(s1), size2(s2) {
-    arr[MAX][]
+    arr[MAX][MAX]
 
 }
 
