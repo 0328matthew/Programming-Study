@@ -13,7 +13,7 @@ class MultiTable {
         multiTable(int capacity);
         ~multiTable();
 
-        void print();
+        void print() const;
 
 };
 
