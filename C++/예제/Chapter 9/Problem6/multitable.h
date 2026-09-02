@@ -9,7 +9,8 @@ class MultiTable {
         int size;
         int capacity;
 
-
+    public:
+        multiTalbe(int size);
 
 
 
