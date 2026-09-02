@@ -3,8 +3,23 @@
 #define MULTITABLE_H
 
 class MultiTable {
-    
-}
+
+    private:
+        int* arr;
+
+
+
+
+
+
+
+
+
+
+
+
+
+};
 
 
 
