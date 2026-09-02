@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-#ifndef SortedARRAY_H
-#define ARRAY_H
+#ifndef SORTEDARRAY_H
+#define SORETEARRAY_H
 
 class SortedArray {
 

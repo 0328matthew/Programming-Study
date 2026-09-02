@@ -1,14 +1,14 @@
 #include "array.h"
 
-Array::Array(int c) : capacity(c), size(0) {
+SortedArray::Array(int c) : capacity(c), size(0) {
     arr = new int[capacity];
 }
 
-Array::~Array() {
+SortedArray::~Array() {
     delete[] arr;
 }
 
-void Array::insert(int value) {
+void SortedArray::insert(int value) {
     if(size >= capacity) {
         cout << "배열이 꽉 차서 더 이상 요소를 추가할 수 없습니다." << endl;
         return;
@@ -17,7 +17,7 @@ void Array::insert(int value) {
     size++;
 }
 
-void Array::print() const {
+void SortedArray::print() const {
     for(int i = 0; i < size; i++) {
         cout << arr[i] << " ";
     }
