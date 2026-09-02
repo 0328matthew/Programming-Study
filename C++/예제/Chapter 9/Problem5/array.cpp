@@ -14,8 +14,6 @@ void SortedArray::insert(int value) {
         return;
     }
 
-    // 뒤에서부터 훑으며 value보다 큰 원소를 한 칸씩 오른쪽으로 민다.
-    // 루프가 멈춘 지점 바로 뒤(i + 1)가 value가 들어갈 자리다.
     int i = size - 1;
     while(i >= 0 && arr[i] > value) {
         arr[i + 1] = arr[i];
