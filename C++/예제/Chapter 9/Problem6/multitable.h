@@ -1,3 +1,13 @@
 #include <iostream>
-#ifndef MULTITLABLE_H
+#ifndef MULTITABLE_H
 #define MULTITABLE_H
+
+class MultiTable {
+    
+}
+
+
+
+
+
+#endif
