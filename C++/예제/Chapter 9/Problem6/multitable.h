@@ -10,20 +10,10 @@ class MultiTable {
         int capacity;
 
     public:
-        multiTalbe(int capacity);
-        ~multiTalbe();
+        multiTable(int capacity);
+        ~multiTable();
 
         void print();
-
-
-
-
-
-
-
-
-
-
 
 };
 
