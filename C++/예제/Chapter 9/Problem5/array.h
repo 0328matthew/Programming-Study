@@ -18,6 +18,7 @@ class SortedArray {
         ~SortedArray();
         
         void insert(int value);
+        void remove(int value);
         void print() const;
 
 };
