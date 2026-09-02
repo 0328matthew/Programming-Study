@@ -1,10 +1,10 @@
 #include "array.h"
 
-SortedArray::Array(int c) : capacity(c), size(0) {
+SortedArray::SortedArray(int c) : capacity(c), size(0) {
     arr = new int[capacity];
 }
 
-SortedArray::~Array() {
+SortedArray::~SortedArray() {
     delete[] arr;
 }
 

@@ -14,8 +14,8 @@ class SortedArray {
 
     public:
         
-        Array(int capacity);
-        ~Array();
+        SortedArray(int capacity);
+        ~SortedArray();
         
         void insert(int value);
         void print() const;
